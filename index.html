@@ -3,30 +3,130 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>صفا کاظمیان</title>
+<title>صفا کاظمیان مقدم | آموزش زبان فارسی، راهی به آرامش</title>
+<meta name="description" content="صفا کاظمیان مقدم، رئیس مرکز آموزش زبان فارسی به غیرفارسی‌زبانان دانشگاه فردوسی مشهد.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
 <style>
-  :root { --bg:#f6f7f9; --ink:#1c2430; --mute:#5b6675; --line:#d5dae1; --accent:#1f5f8b; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg:#141a22; --ink:#e8ecf1; --mute:#9aa6b5; --line:#2a3441; --accent:#6fb1de; }
-  }
-  * { box-sizing:border-box; }
-  html, body { height:100%; margin:0; }
-  body {
-    background:var(--bg); color:var(--ink);
-    font-family: Vazirmatn, Tahoma, "Segoe UI", sans-serif;
-    display:grid; place-items:center; padding:24px; line-height:1.9;
-  }
-  main { width:100%; max-width:34rem; border-inline-start:4px solid var(--accent); padding-inline-start:24px; }
-  h1 { font-size:clamp(1.9rem, 6vw, 2.8rem); margin:0 0 .4rem; font-weight:700; }
-  p { margin:0 0 1rem; color:var(--mute); font-size:1.05rem; }
-  small { color:var(--mute); border-top:1px solid var(--line); display:block; padding-top:.8rem; margin-top:1.4rem; }
+:root{--bg:#f2f5f3;--ink:#16302f;--muted:#4f6664;--teal:#0f6b6b;--deep:#0b3d3f;--line:#cfdcd8;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1f20;--ink:#e6f0ee;--muted:#9db5b1;--teal:#5fc4bd;--deep:#071617;--line:#24403f;--card:#122a2b}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Vazirmatn",Tahoma,sans-serif;line-height:2;font-size:17px}
+a{color:var(--teal)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+nav{display:flex;flex-wrap:wrap;gap:6px 22px;justify-content:center;padding:14px 16px;border-bottom:1px solid var(--line);font-size:15px}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--teal)}
+.hero{background:var(--deep);color:#eaf5f3;padding:88px 24px 96px;text-align:center;position:relative;overflow:hidden}
+.hero svg{position:absolute;inset:0;width:100%;height:100%;opacity:.12}
+.hero>div{position:relative;max-width:720px;margin:auto}
+.hero h1{font-size:clamp(30px,6vw,54px);font-weight:800;line-height:1.5;margin:0 0 18px}
+.hero p{font-size:19px;font-weight:300;margin:0 auto 30px;max-width:560px}
+.btn{display:inline-block;background:#7fd6ce;color:#062a2b;padding:10px 28px;border-radius:999px;text-decoration:none;font-weight:600}
+.btn:hover{background:#a5e6e0}
+section{max-width:760px;margin:auto;padding:64px 24px 8px}
+h2{font-size:28px;font-weight:800;margin:0 0 12px;color:var(--teal)}
+p{margin:0 0 14px}
+.principles{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:14px}
+.principles li{background:var(--card);border-right:4px solid var(--teal);padding:14px 20px;border-radius:6px}
+.principles b{display:block}
+.principles span{color:var(--muted);font-size:15px}
+.note{background:var(--card);border:1px dashed var(--line);border-radius:6px;padding:14px 20px;color:var(--muted);font-size:15px}
+.lead{font-size:20px;font-weight:600;color:var(--ink);border-right:4px solid var(--teal);padding-right:16px;margin-bottom:20px}
+.logo{display:block;background:#fff;padding:12px 16px;border-radius:8px;border:1px solid var(--line);max-width:100%;height:auto;margin-bottom:20px}
+.contact{list-style:none;padding:0;margin:0}
+.contact li{padding:6px 0;border-bottom:1px solid var(--line)}
+footer{margin-top:72px;padding:28px 16px;text-align:center;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
+<nav aria-label="منوی اصلی">
+  <a href="#about">درباره‌ی من</a>
+  <a href="#view">نگاه من</a>
+  <a href="#center">مرکز</a>
+  <a href="#courses">دوره‌ها</a>
+  <a href="#facilities">امکانات</a>
+  <a href="#notes">یادداشت‌ها</a>
+  <a href="#contact">تماس</a>
+</nav>
+
+<header class="hero">
+  <svg aria-hidden="true" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+    <defs><pattern id="p" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M10 0L20 10L10 20L0 10Z" fill="none" stroke="#fff" stroke-width=".5"/>
+      <circle cx="10" cy="10" r="3" fill="none" stroke="#fff" stroke-width=".5"/></pattern></defs>
+    <rect width="100" height="100" fill="url(#p)"/>
+  </svg>
+  <div>
+    <h1>آموزش زبان فارسی، راهی برای یافتن صلح و آرامش</h1>
+    <p>صفا کاظمیان مقدم، رئیس مرکز آموزش زبان فارسی به غیرفارسی‌زبانان دانشگاه فردوسی مشهد</p>
+    <a class="btn" href="#view">نگاه من به آموزش فارسی</a>
+  </div>
+</header>
+
 <main>
-  <h1>صفا کاظمیان</h1>
-  <p>این سایت در حال آماده‌سازی است. به‌زودی معرفی کامل در همین صفحه قرار می‌گیرد.</p>
-  <small>صفحه‌ی آزمایشی</small>
+<section id="about">
+  <h2>درباره‌ی من</h2>
+  <p>من صفا کاظمیان مقدم هستم، رئیس مرکز آموزش زبان فارسی به غیرفارسی‌زبانان دانشگاه فردوسی مشهد.</p>
+  <p>دکتری زبان و ادبیات فارسی دارم و زبان فارسی را در کشورهای پاکستان، هند و عراق تدریس کرده‌ام.</p>
+  <p class="note">سال‌های تدریس، دانشگاه‌های میزبان، کتاب‌ها و پژوهش‌های شما را بعداً اضافه می‌کنیم.</p>
+</section>
+
+<section id="view">
+  <h2>نگاه من به آموزش زبان فارسی</h2>
+  <p class="lead">زبان فارسی زبانی آرامبخش و شاعرانه است که آموختن آن، زندگی معنوی شما را متحول می‌کند.</p>
+  <p>باور دارم یادگرفتن فارسی فقط یادگرفتن دستور و واژه نیست. زبان دروازه‌ای است به فرهنگی که شعر، مهربانی و گفت‌وگو در آن ریشه دارد، و فارسی‌آموز از این راه می‌تواند با دیگران و با خودش آشتی کند و به آرامش برسد.</p>
+  <ul class="principles">
+    <li><b>زبان، پلی میان انسان‌ها</b><span>آموزش را با گفت‌وگو و شنیدن یکدیگر شروع می‌کنیم.</span></li>
+    <li><b>یادگیری با آرامش</b><span>کلاس، جایی امن برای اشتباه کردن و دوباره امتحان کردن است.</span></li>
+    <li><b>فارسی همراه با فرهنگ</b><span>شعر، داستان و زندگی روزمره بخشی از درس‌اند.</span></li>
+  </ul>
+  <p class="note" style="margin-top:20px">این اصول پیش‌نویس است. لطفاً با دیدگاه واقعی خودتان اصلاحش کنید.</p>
+</section>
+
+<section id="center">
+  <h2>مرکز آموزش زبان فارسی به غیرفارسی‌زبانان</h2>
+  <img class="logo" src="logo.png" alt="نشان مرکز بین‌المللی آموزش زبان فارسی به غیرفارسی‌زبانان دانشگاه فردوسی مشهد" width="260">
+  <p>مرکز زبان فارسی دانشگاه فردوسی مشهد یکی از قدیمی‌ترین مراکز آموزش زبان فارسی در ایران است. این مرکز فعالیت خود را از سال ۱۳۵۲ آغاز کرد و در سال ۱۳۹۱ با مجوز رسمی وزارت علوم، تشکیلات مصوب اداری و آموزشی یافت.</p>
+  <p><a href="https://ctpl.um.ac.ir" rel="noopener">وب‌سایت رسمی مرکز: ctpl.um.ac.ir</a></p>
+  <p class="note">ماموریت، سطح دوره‌ها و آمار فارسی‌آموزان را بعداً اضافه می‌کنیم.</p>
+</section>
+
+<section id="courses">
+  <h2>دوره‌های آموزشی</h2>
+  <p>دوره‌های فارسی‌آموزی در سطح‌های مختلف برگزار می‌شود، از آشنایی با الفبا تا خواندن متن‌های ادبی.</p>
+  <ul class="principles">
+    <li><b>مقدماتی</b><span>الفبا، تلفظ، گفت‌وگوهای روزمره و واژه‌های پایه.</span></li>
+    <li><b>متوسط</b><span>دستور زبان، خواندن متن‌های ساده و نوشتن جمله‌ها و نامه‌های کوتاه.</span></li>
+    <li><b>پیشرفته</b><span>خواندن متن‌های علمی و ادبی، شعر و نثر کلاسیک، و گفت‌وگوی روان.</span></li>
+  </ul>
+  <p class="note" style="margin-top:20px">این سطح‌ها نمونه‌اند. لطفاً نام دوره‌های واقعی، مدت، شیوه‌ی برگزاری (حضوری یا آنلاین) و راه ثبت‌نام را بفرستید تا جایگزین شوند.</p>
+</section>
+
+<section id="facilities">
+  <h2>امکانات</h2>
+  <p class="note">کلاس‌های حضوری و آنلاین، منابع آموزشی، آزمون‌ها و خدمات دیگر مرکز را اینجا فهرست می‌کنیم. لطفاً بفرمایید چه امکاناتی دارید.</p>
+</section>
+
+<section id="notes">
+  <h2>یادداشت‌ها</h2>
+  <p>یادداشت‌های کوتاه درباره‌ی آموزش فارسی، تجربه‌های کلاس و فرهنگ ایرانی اینجا منتشر می‌شود.</p>
+  <p class="note">هنوز یادداشتی منتشر نشده است. نخستین یادداشت را با هم می‌نویسیم.</p>
+</section>
+
+<section id="contact">
+  <h2>تماس</h2>
+  <ul class="contact">
+    <li>ایمیل شخصی: <a href="mailto:safakazemian@gmail.com" dir="ltr">safakazemian@gmail.com</a></li>
+    <li>ایمیل دانشگاهی: <a href="mailto:safa@um.ac.ir" dir="ltr">safa@um.ac.ir</a></li>
+    <li>ایمیل مرکز: <a href="mailto:ctpl@um.ac.ir" dir="ltr">ctpl@um.ac.ir</a></li>
+    <li>وب‌سایت مرکز: <a href="https://ctpl.um.ac.ir" dir="ltr" rel="noopener">ctpl.um.ac.ir</a></li>
+  </ul>
+</section>
 </main>
+
+<footer>© صفا کاظمیان مقدم</footer>
 </body>
 </html>
